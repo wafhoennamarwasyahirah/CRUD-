@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Mengatur tinggi body agar memenuhi viewport */
+            margin: 0; /* Menghilangkan margin default */
+            background-color: #f0f0f0; /* Warna latar belakang */
+        }
+        .login {
+            background-color: white; /* Warna latar belakang form */
+            padding: 20px; /* Ruang di dalam form */
+            border-radius: 5px; /* Sudut membulat */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+        }
+        h2 {
+            margin-bottom: 20px; /* Jarak bawah judul */
+        }
+        label {
+            display: block; /* Membuat label menjadi blok */
+            margin-bottom: 5px; /* Jarak bawah label */
+        }
+        input {
+            width: 100%; /* Lebar input 100% dari kontainer */
+            padding: 10px; /* Ruang di dalam input */
+            margin-bottom: 15px; /* Jarak bawah input */
+            border: 1px solid #ccc; /* Garis batas */
+            border-radius: 4px; /* Sudut membulat */
+        }
+        button {
+            width: 100%; /* Lebar tombol 100% dari kontainer */
+            padding: 10px; /* Ruang di dalam tombol */
+            background-color: #007bff; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            border: none; /* Menghilangkan garis batas */
+            border-radius: 4px; /* Sudut membulat */
+            cursor: pointer; /* Menunjukkan bahwa tombol dapat diklik */
+        }
+        button:hover {
+            background-color: #0056b3; /* Warna latar belakang tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="login container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
